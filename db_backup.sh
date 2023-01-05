@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "starting db backup"
+echo "Start db backup"
 day="$(date +'%A')"
 db_backup="mydb_${day}.sql"
 sudo mysqldump  -u site -p --no-tablespaces dbname  >/home/${db_backup}
